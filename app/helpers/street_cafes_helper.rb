@@ -1,0 +1,2 @@
+module StreetCafesHelper
+end

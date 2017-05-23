@@ -1,0 +1,26 @@
+<div class="container">
+  <h2>Street Cafe's</h2>
+  <!-- <h4>Total Cafes: <%= @total %></h4> -->
+  <!-- <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p> -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Restaurant Name</th>
+        <th>Address</th>
+        <th>Post Code</th>
+        <th>Number of Chairs</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Iterate through column values -->
+      <% @street_cafes.each do |r| %>
+      <tr>
+        <td><%= r.cafe_name %></td>
+        <td><%= r.street_address %></td>
+        <td><%= r.post_code %></td>
+        <td><%= r.number_of_chairs %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
